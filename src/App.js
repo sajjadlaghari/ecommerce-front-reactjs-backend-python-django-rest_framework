@@ -1,15 +1,15 @@
 // src/App.js
-import React from 'react';
+import React from "react";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Header from './pages/components/Header';
-import Footer from './pages/components/Footer';
-import Home from './pages/Category';
+import Header from "./pages/components/Header";
+import Footer from "./pages/components/Footer";
+import Home from "./pages/Home";
 
-import ProductDetailed from './pages/Product-detailed';
-import Category from './pages/Category';
-
-
+import ProductDetailed from "./pages/Product-detailed";
+import Category from "./pages/Category";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 
 const App = () => {
   return (
@@ -20,7 +20,8 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/product-detailed" element={<ProductDetailed />} />
           <Route path="/categories" element={<Category />} />
-      
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
         <Footer />
       </div>

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Header = () => {
     return (
         <>
-        
+
             <header class="header trans_300">
 
                 <div class="top_nav">
@@ -17,7 +17,7 @@ const Header = () => {
                                 <div class="top_nav_right">
                                     <ul class="top_nav_menu">
 
-                                  
+
 
                                         <li class="currency">
                                             <Link to="#">
@@ -49,8 +49,8 @@ const Header = () => {
                                                 <i class="fa fa-angle-down"></i>
                                             </Link>
                                             <ul class="account_selection">
-                                                <li><Link to="#"><i class="fa fa-sign-in" aria-hidden="true"></i>Sign In</Link></li>
-                                                <li><Link to="#"><i class="fa fa-user-plus" aria-hidden="true"></i>Register</Link></li>
+                                                <li><Link to="/login"><i class="fa fa-sign-in" aria-hidden="true"></i>Sign In</Link></li>
+                                                <li><Link to="/register"><i class="fa fa-user-plus" aria-hidden="true"></i>Register</Link></li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -60,7 +60,7 @@ const Header = () => {
                     </div>
                 </div>
 
-             
+
 
                 <div class="main_nav_container">
                     <div class="container">
@@ -72,10 +72,7 @@ const Header = () => {
                                 <nav class="navbar">
                                     <ul class="navbar_menu">
                                         <li><Link to="/">home</Link></li>
-                                        <li><Link to="#">shop</Link></li>
-                                        <li><Link to="#">promotion</Link></li>
-                                        <li><Link to="#">pages</Link></li>
-                                        <li><Link to="#">blog</Link></li>
+                                        <li><Link to="/categories">Categories</Link></li>
                                         <li><Link to="#">contact</Link></li>
                                     </ul>
                                     <ul class="navbar_user">
