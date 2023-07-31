@@ -1,7 +1,13 @@
 import React from "react";
-
+import { useState } from "react";
 
 const ProductDetailed = () => {
+
+    const [image, setImage] = useState('/images/single_2.jpg')
+
+    const ImageController = (img) => {
+        setImage(img)
+    }
     return (
         <>
 
@@ -28,15 +34,15 @@ const ProductDetailed = () => {
                                     <div class="col-lg-3 thumbnails_col order-lg-1 order-2">
                                         <div class="single_product_thumbnails">
                                             <ul>
-                                                <li><img src="/images/single_1_thumb.jpg" alt="" data-image="/images/single_1.jpg" /></li>
-                                                <li class="active"><img src="images/single_2_thumb.jpg" alt="" data-image="/images/single_2.jpg" /></li>
-                                                <li><img src="/images/single_3_thumb.jpg" alt="" data-image="/images/single_3.jpg" /></li>
+                                                <li onClick={() => {ImageController("/images/single_1_thumb.jpg")}} ><img  src="/images/single_1_thumb.jpg" alt="" data-image="/images/single_1.jpg" /></li>
+                                                <li onClick={() => {ImageController("/images/single_2_thumb.jpg")}}class="active"><img  src="images/single_2_thumb.jpg" alt="" data-image="/images/single_2.jpg" /></li>
+                                                <li onClick={() => {ImageController("/images/single_3_thumb.jpg")}} ><img   src="/images/single_3_thumb.jpg" alt="" data-image="/images/single_3.jpg" /></li>
                                             </ul>
                                         </div>
                                     </div>
                                     <div class="col-lg-9 image_col order-lg-2 order-1">
                                         <div class="single_product_image">
-                                            <div class="single_product_image_background" style={{backgroundImage:'url(./images/single_2.jpg)'}}></div>
+                                            <div class="single_product_image_background" style={{backgroundImage:`url(${image})`}}></div>
                                         </div>
                                     </div>
                                 </div>
