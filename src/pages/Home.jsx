@@ -74,21 +74,21 @@ const Home = () => {
                             <div class="col-md-4">
                                 <div class="banner_item align-items-center" style={{ backgroundImage: 'url(images/banner_1.jpg)' }}>
                                     <div class="banner_category">
-                                        <a href="categories.html">women's</a>
+                                        <a href="/categories">women's</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="banner_item align-items-center" style={{ backgroundImage: 'url(images/banner_2.jpg)' }}>
                                     <div class="banner_category">
-                                        <a href="categories.html">accessories's</a>
+                                        <a href="/categories">accessories's</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="banner_item align-items-center" style={{ backgroundImage: 'url(images/banner_3.jpg)' }}>
                                     <div class="banner_category">
-                                        <a href="categories.html">men's</a>
+                                        <a href="/categories">men's</a>
                                     </div>
                                 </div>
                             </div>
