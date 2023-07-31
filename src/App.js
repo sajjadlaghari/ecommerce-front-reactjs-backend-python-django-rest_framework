@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import ProductDetailed from './pages/Product-detailed';
 
 
+
 const App = () => {
   return (
     <BrowserRouter>
@@ -16,6 +17,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/product-detailed" element={<ProductDetailed />} />
+      
         </Routes>
         <Footer />
       </div>
