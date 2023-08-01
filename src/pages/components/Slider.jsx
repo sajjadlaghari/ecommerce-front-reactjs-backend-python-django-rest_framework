@@ -32,13 +32,16 @@ export default function BannerSlider() {
 
     return (
 
+     
+
         <Slider {...settings}>
             {sliders.map(item => {
                 const modifiedImageUrl = item.image.replace('/media/', '/'); // Remove the first occurrence of /media/
 
                 return (
-                    <div key={item.id}>
-                        <div className="main_slider" style={{ backgroundImage: `url(http://localhost:8000${modifiedImageUrl})`, height: '600px', marginTop: '100px', backgroundSize: 'contain', backgroundPosition: 'center', width: '100%' }}>
+                    <div className="" >
+                    <div key={item.id}  style={{ backgroundImage: `url(http://localhost:8000${modifiedImageUrl})`,backgroundSize:'cover' ,  marginTop: '100px'}}>
+                        <div className="main_slider">
                             <div className="container fill_height">
                                 <div className="row align-items-center fill_height">
                                     <div className="col">
@@ -54,6 +57,8 @@ export default function BannerSlider() {
                             </div>
                         </div>
                     </div>
+                </div>
+
                 );
             })}
         </Slider>
