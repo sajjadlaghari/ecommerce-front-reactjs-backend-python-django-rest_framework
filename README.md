@@ -12,6 +12,11 @@ https://github.com/sajjadlaghari/ecommerce-front-reactjs-backend-python-django-r
 
 ![screencapture-localhost-3000-categories-2023-08-01-01_47_58](https://github.com/sajjadlaghari/ecommerce-front-reactjs-backend-python-django-rest_framework/assets/68752819/c33bbdd5-f86c-4b3d-b0c0-fa48c3c8efac)
 
+### Product detailed Api
+
+![image](https://github.com/sajjadlaghari/ecommerce-front-reactjs-backend-python-django-rest_framework/assets/68752819/5d81a0e7-08e3-4fcb-b6a2-20c3e0d6e670)
+
+
 
 ### Login
 
