@@ -10,7 +10,6 @@ const Products = () => {
     const MAX_TITLE_LENGTH = 20; // Maximum characters for the short title
     const MAX_DESCRIPTION_LENGTH = 50; // Maximum characters for the short description
 
-
     useEffect(() => {
         fetchProductData();
     }, []);
@@ -81,8 +80,11 @@ const Products = () => {
                                             </select>
                                         </div> */}
                                         <div class="buy d-flex justify-content-between align-items-center">
+                                            <div class="price text-success"><h5 class="mt-4">
+                                                <Link to={`/product-detailed/${item.id}`} className='text-dark' >View Detail</Link>
+                                                </h5></div>
                                             <div class="price text-success"><h5 class="mt-4">${item.price}</h5></div>
-                                            <a href="#" class="btn btn-success mt-3"> Add to Cart</a>
+                                            {/* <a href="#" class="btn btn-success mt-3"> Add to Cart</a> */}
                                         </div>
                                     </div>
                                 </div>
