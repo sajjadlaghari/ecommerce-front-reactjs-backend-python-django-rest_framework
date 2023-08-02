@@ -79,7 +79,6 @@ const ProductDetailed = () => {
                                 <div class="row">
                                     <div class="col-lg-3 thumbnails_col order-lg-1 order-2">
                                         <div class="single_product_thumbnails">
-                                        <button onClick={handleShowToast}>Show Toast</button>
       <ToastContainer />
                                         {product?.images?.map(item => {
                                                 const modifiedImageUrl = item.image.replace('/media/', '/');
