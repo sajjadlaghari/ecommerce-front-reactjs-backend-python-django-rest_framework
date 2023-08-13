@@ -8,6 +8,7 @@ const Register = () => {
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
     const [email, setEmail] = useState('');
+    const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const variableMessage = 'Dynamic variable message';
     const navigate = useNavigate()
@@ -23,10 +24,11 @@ const Register = () => {
                 },
                 body: JSON.stringify({
                     email: email,
-                    firstName: firstName,
-                    lastName: lastName,
-                    password: password,
-                    username: email,
+                    firstname: firstName,
+                    lastname: lastName,
+                    password
+                        : password,
+                    username: username
 
                 }),
             });
@@ -100,6 +102,15 @@ const Register = () => {
                                                 onChange={(e) => setLastName(e.target.value)}
                                                 id="typeEmailX-2" class="form-control form-control-lg" />
                                             <label class="form-label" for="typeEmailX-2" placeholder="Last Name">Last Name</label>
+                                        </div>
+
+
+                                        <div class="form-outline mb-4">
+                                            <input type="text"
+                                                value={username}
+                                                onChange={(e) => setUsername(e.target.value)}
+                                                id="typeEmailX-2" class="form-control form-control-lg" />
+                                            <label class="form-label" for="typeEmailX-2" placeholder="Email">Username</label>
                                         </div>
 
                                         <div class="form-outline mb-4">

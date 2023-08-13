@@ -1,7 +1,10 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 
-const Header = () => {
+const Header = ({ isLoggedIn, setIsLoggedIn }) => {
+
+    console.log(isLoggedIn)
+
     return (
         <>
 
@@ -49,8 +52,26 @@ const Header = () => {
                                                 <i class="fa fa-angle-down"></i>
                                             </Link>
                                             <ul class="account_selection">
-                                                <li><Link to="/login"><i class="fa fa-sign-in" aria-hidden="true"></i>Sign In</Link></li>
-                                                <li><Link to="/register"><i class="fa fa-user-plus" aria-hidden="true"></i>Register</Link></li>
+                                                {isLoggedIn ? (
+                                                    <>
+                                                        <li><Link to="#"
+                                                            onClick={() => {
+                                                                setIsLoggedIn(false)
+                                                                window.location.reload()
+                                                            }}
+                                                        ><i class="fa fa-sign-in" aria-hidden="true"></i>Logout</Link></li>
+                                                    </>
+
+                                                ) :
+                                                    (
+                                                        <>
+                                                            <li><Link to="/login"><i class="fa fa-sign-in" aria-hidden="true"></i>Sign In</Link></li>
+                                                            <li><Link to="/register"><i class="fa fa-user-plus" aria-hidden="true"></i>Register</Link></li>
+
+                                                        </>
+
+                                                    )
+                                                }
                                             </ul>
                                         </li>
                                     </ul>
